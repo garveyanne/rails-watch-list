@@ -3,8 +3,9 @@
   <%= link_to '+', new_list_bookmark_path(@list), class: 'btn btn-primary' %>
   <%= link_to 'Watchlist', lists_path, class: 'btn btn-primary' %>
   <% @list.bookmarks.each do |list| %>
-    <div class="card-pick mt-3">
-      <%= image_tag "#{list.movie.poster_url}" %>
+    <div class="
+  style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= {list.movie.poster_url}, height: 300, crop: :fill %>')"
+>
       <div class="card-pick-info">
         <h2><%= list.movie.title %></h2>
         <p><%= list.movie.overview %></p>

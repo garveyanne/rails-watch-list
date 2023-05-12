@@ -9,6 +9,8 @@
     <div class="card-trip mt-3">
       <div class="card-trip-info">
         <p> <%= link_to list.name, list_path(list), class: 'title' %></p>
+        <p><%= cl_image_path("list.photo.key",
+      width: 400, height: 300, crop: :fill) %> %></p>
       </div>
     </div>
   <% end %>

@@ -1,6 +1,7 @@
 <div class="container mb-3 mt-3 justify-content-center">
   <%= simple_form_for @list do |f| %>
     <%= f.input :name %>
+    <%= f.input :photo, as: :file %>
     <%= f.submit %>
   <% end %>
 </div>
