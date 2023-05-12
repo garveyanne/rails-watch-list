@@ -1,21 +1,24 @@
 
+h1 {
+  margin: 0;
+  color: rgba(229, 238, 103, 0.736);
+  text-shadow: 1px 1px 3px rgba(211, 187, 114, 0.2);
+  font-size: 48px;
+  font-weight: bold;
+}
+
 .card-pick {
   overflow: hidden;
   height: 200px;
-  width: 300px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  width: 200px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
   display: block;
   align-items: center;
-}
-
-.card-pick img {
-  object-position: scale-down;
-  background-image: cover;
+  opacity: 0.7;
 }
 
 .card-pick h2 {
   font-size: 16px;
-  font-weight: bold;
   margin: 0;
   padding: 8px;
   text-shadow: 1px 1px 3px rgba(211, 187, 114, 0.2);
@@ -24,7 +27,6 @@
 .card-pick p {
   font-size: 12px;
   line-height: 1.4;
-  opacity: .7;
   margin-bottom: 0;
   margin-top: 8px;
   text-shadow: 1px 1px 3px rgba(211, 187, 114, 0.2);
@@ -32,4 +34,38 @@
 
 .card-pick .card-pick-infos {
   padding: 16px;
+}
+
+.btn-flat {
+  font-size: 24px;
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  opacity: .7;
+  background: #d40f47;
+  transition: background 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-flat:hover {
+  background: #c4040e;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-flat-add {
+  font-size: 24px;
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  opacity: .7;
+  background: #d40f47;
+  transition: background 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-flat-add:hover {
+  background: #c4040e;
+  color: white;
+  text-decoration: none;
 }

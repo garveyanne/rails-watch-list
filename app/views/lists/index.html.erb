@@ -6,12 +6,12 @@
 </div>
 <div>
   <% @lists.each do |list| %>
-    <div class="card-trip mt-3">
-      <div class="card-trip-info">
-        <p> <%= link_to list.name, list_path(list), class: 'title' %></p>
-        <p><%= cl_image_path("list.photo.key",
-      width: 400, height: 300, crop: :fill) %> %></p>
+    <div class="card-trip">
+      <div class="card-img" style="
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= list.photo.attached? ? (cl_image_path list.photo.key) : "" %>)">
+        <div class="card-trip-info">
+          <h1> <%= link_to list.name, list_path(list), class: 'title' %></h1>
+        </div>
       </div>
-    </div>
-  <% end %>
-</div>
+    <% end %>
+  </div>

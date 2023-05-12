@@ -2,6 +2,7 @@
   background-size: cover;
   background-position: center;
   padding: 150px 0;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
 }
 
 .banner h1 {
@@ -35,25 +36,28 @@
 }
 
 .card-trip {
-  height: 180px;
-  width: 180px;
-  display: inline-block;
-  align-items: center;
-  margin-bottom: 8px;
-  background: rgb(58, 57, 57);
+  height: 200px;
+  width: 200px;
+  margin: 8px;
   opacity: .7;
-  padding: 8px 16px;
-  border: 1px solid rgb(235,235,235);
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
 }
 
 .title {
-  color: white;
-  font-size: 16px;
+  margin: 8;
+  color: rgba(229, 238, 103, 0.736);
+  text-shadow: 1px 1px 3px rgba(211, 187, 114, 0.2);
+  font-size: 24px;
+  text-align: center;
   opacity: .7;
-  margin: 0;
   text-decoration: none;
 }
 
 body {
   background-color: rgba(91, 28, 91, 0.846);
+}
+
+.card-img {
+  background-size: cover;
+  height: 100%
 }
