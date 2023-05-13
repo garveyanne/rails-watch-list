@@ -11,7 +11,11 @@
     background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= list.photo.attached? ? (cl_image_path list.photo.key) : "" %>)">
         <div>
           <h1> <%= link_to list.name, list_path(list), class: 'title' %></h1>
+          <%= link_to list_bookmarks_path(list), data: { turbo_method: :delete, turbo_confirm: "Remove #{list.name}?" }, class: 'card-remove-link' do %>
+            <i class="fa-regular fa-trash-can fa-sm"></i>
+          <% end %>
         </div>
       </div>
     </div>
   <% end %>
+</div>
